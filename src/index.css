@@ -1,6 +1,11 @@
 
 body {
   margin: 0;
+  background-color: #111927;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(352.13, 100%, 64%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+
 }
 /* Navbar  */
 nav {
@@ -8,13 +13,18 @@ nav {
   align-items: center;
   width: 100%;
   height: 5rem;
-  background: #fff;
-  box-shadow: 0px 5px 5px rgb(230, 230, 230);
+  box-shadow: 0px 1px 1px rgb(253, 97, 97);
+
+  backdrop-filter: blur(23px) saturate(153%);
+    -webkit-backdrop-filter: blur(23px) saturate(153%);
+    background-color: rgba(17, 25, 40, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 nav img {
   padding: 30px;
   width: 100px;
+  filter: brightness(0) invert(1);
 }
 
 /* Hero Section  */
@@ -26,35 +36,58 @@ nav img {
 .hero-section img {
   width: 70%;
   padding: 10px 15%;
+
+  backdrop-filter: blur(23px) saturate(153%);
+    -webkit-backdrop-filter: blur(23px) saturate(153%);
+    background-color: rgba(17, 25, 40, 0.7);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
 .hero-section h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem;
+  color: #fff;
 }
 .hero-section p{
   font-size: 1.4rem;
   font-weight: 500;
+  color: #fff;
 }
 
 /* Card Section */
 .card {
-  width: 175px;
+  width: 190px;
   font-size: 12px;
   flex: 0 0 auto;
   flex-direction: column;
   position: relative;
-  background: #ffebec;
   padding: 38px 10px;
-  border-radius: 5px;
   margin: 0 0 -10px 0;
+
+  backdrop-filter: blur(23px) saturate(153%);
+    -webkit-backdrop-filter: blur(23px) saturate(153%);
+    background-color: rgba(17, 25, 40, 0.1);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    transition: all 0.2s ease-in-out;
+    scroll-snap-align: center;
 }
+
+.card:hover {
+  scale: 1.01;
+  color: #fff;
+  border: 0.5px solid #918e9b;
+  cursor: pointer;
+}
+
 .card-container {
   display: flex;
   overflow-x: scroll;
-  /* flex-wrap: wrap; */
-  gap : 20px;
+  gap : 30px;
   padding : 20px;
   height : 26em;
+  color: #fff;
+  scroll-snap-type: x mandatory;
 }
 
 .card--image {
@@ -63,6 +96,8 @@ nav img {
   height : 80%;
   position: relative;
   top: -30px;
+  transition: all 0.02s ease-in-out;
+  
 }
 
 .card--stats {
@@ -80,6 +115,8 @@ nav img {
   font-size: 12px;
   z-index: 1;
   background: #fff;
+  opacity: 0.8;
+  color: #111927;
   font-weight: bold;
   padding: 7px;
   border-radius: 2px;
@@ -98,4 +135,3 @@ span {
 .para {
   font-size: larger;
 }
-

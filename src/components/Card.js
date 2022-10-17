@@ -8,12 +8,12 @@ export default function Card(props) {
     }else if(props.card.location === "Online"){
         badgeText = "ONLINE"
     }
-    return (
+    return ( 
         <div className="card">
         {badgeText && <div className="card-badge">{badgeText}</div>}
-            <img src={`Images/${props.card.coverImg}`} className="card--image" alt='card-age' />
+            <img src={process.env.PUBLIC_URL +  `/Imgs/${props.card.coverImg}`} className="card--image" alt='card-age' />
             <div className="card--stats">
-                <span className='card--star'>⭐</span>
+                <span className='card--star'>⭐</span> 
                 <span>{props.card.stats.rating}</span>
                 <span className="gray">({props.card.stats.reviewCount}) • </span>
                 <span className="gray">{props.card.location}</span>

@@ -49,50 +49,14 @@ export default [
     },
     {
         id: 5,
-        title: "Off Roading",
-        price: 50,
-        coverImg: "yusuf.jpeg",
+        title: "Debugging",
+        price: 670,
+        coverImg: "shivansh.jpg",
         stats: {
-            rating: 4.8,
-            reviewCount: 2
+            rating: 7,
+            reviewCount: 4
         },
-        location: "Bhopal",
-        openSpots: 3,
-    },
-    {
-        id: 6,
-        title: "Off Roading",
-        price: 50,
-        coverImg: "yusuf.jpeg",
-        stats: {
-            rating: 4.8,
-            reviewCount: 2
-        },
-        location: "Bhopal",
-        openSpots: 3,
-    },
-    {
-        id: 7,
-        title: "Off Roading",
-        price: 50,
-        coverImg: "yusuf.jpeg",
-        stats: {
-            rating: 4.8,
-            reviewCount: 2
-        },
-        location: "Bhopal",
-        openSpots: 3,
-    },
-    {
-        id: 8,
-        title: "Off Roading",
-        price: 50,
-        coverImg: "yusuf.jpeg",
-        stats: {
-            rating: 4.8,
-            reviewCount: 2
-        },
-        location: "Bhopal",
+        location: "Bina",
         openSpots: 3,
     }
 ]
